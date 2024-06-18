@@ -1,0 +1,136 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF8E1;
+    color: #5D4037;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #FF7043;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #BF360C;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFE0B2;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #D84315;
+    text-align: center;
+}
+
+button {
+    background-color: #FF7043;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #BF360C;
+}
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+form input, form select, form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #BCAAA4;
+    border-radius: 4px;
+}
+
+form input[type="date"] {
+    width: calc(100% - 22px);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #FFCCBC;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li a {
+    color: #5D4037;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+ul li div {
+    display: flex;
+}
+
+.confirm-delete {
+    text-align: center;
+    background-color: #FFE0B2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.confirm-delete button, .confirm-delete a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.confirm-delete a {
+    color: #FF7043;
+    text-decoration: none;
+}
+
+.confirm-delete a:hover {
+    text-decoration: underline;
+}

@@ -4,13 +4,21 @@
 
 {% block content %}
 <h1>Subjects</h1>
-<a href="{% url 'subject_create' %}">Add Subject</a>
+<a href="{% url 'subject_create' %}">
+    <button>Add Subject</button>
+</a>
 <ul>
     {% for subject in subjects %}
     <li>
         {{ subject.name }}
-        <a href="{% url 'subject_update' subject.pk %}">Edit</a> - 
-        <a href="{% url 'subject_delete' subject.pk %}">Delete</a>
+        <div>
+            <a href="{% url 'subject_update' subject.pk %}">
+                <button>Edit</button>
+            </a>
+            <a href="{% url 'subject_delete' subject.pk %}">
+                <button>Delete</button>
+            </a>
+        </div>
     </li>
     {% endfor %}
 </ul>
