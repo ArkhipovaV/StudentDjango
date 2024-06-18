@@ -2,3 +2,5 @@
 .idea
 db.sqlite3
 /grades/migrations/
+/grades/__pycache__
+/StudentDjango/__pycache__

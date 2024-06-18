@@ -1,0 +1,17 @@
+{% extends 'grades/base.html' %}
+
+{% block title %}Subjects{% endblock %}
+
+{% block content %}
+<h1>Subjects</h1>
+<a href="{% url 'subject_create' %}">Add Subject</a>
+<ul>
+    {% for subject in subjects %}
+    <li>
+        {{ subject.name }}
+        <a href="{% url 'subject_update' subject.pk %}">Edit</a> - 
+        <a href="{% url 'subject_delete' subject.pk %}">Delete</a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

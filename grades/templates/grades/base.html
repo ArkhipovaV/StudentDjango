@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Student Management{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'student_list' %}">Students</a></li>
+            <li><a href="{% url 'subject_list' %}">Subjects</a></li>
+            <li><a href="{% url 'grade_list' %}">Grades</a></li>
+            <li><a href="{% url 'performance_report' %}">Performance Report</a></li>
+        </ul>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>

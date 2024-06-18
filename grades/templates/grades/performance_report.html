@@ -1,0 +1,26 @@
+{% extends 'grades/base.html' %}
+
+{% block title %}Performance Report{% endblock %}
+
+{% block content %}
+    <h1>Performance Report</h1>
+    <h2>Best Student</h2>
+    <p>{{ best_student.first_name }} {{ best_student.last_name }} - Average Grade: {{ best_student.avg_grade }}</p>
+
+    <h2>Worst Student</h2>
+    <p>{{ worst_student.first_name }} {{ worst_student.last_name }} - Average Grade: {{ worst_student.avg_grade }}</p>
+
+    <h2>Average Grades by Subject</h2>
+    <ul>
+        {% for subject in subjects_avg %}
+        <li>{{ subject.subject__name }}: {{ subject.avg_grade }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Average Grades by Student</h2>
+    <ul>
+        {% for student in students_avg %}
+        <li>{{ student.student__first_name }} {{ student.student__last_name }}: {{ student.avg_grade }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
